@@ -45,7 +45,7 @@ function cargarPeliculas(url) {
             peli.setAttribute("data-categoria", pelicula.genre_ids[0] || "otros");
 
             const tituloLimpio = encodeURIComponent(nombreLimpio);
-            const linkAvapelis = `https://www.pelis44.com/?s=${tituloLimpio}`;
+            const linkpelis44 = `https://www.pelis44.com/?s=${tituloLimpio}`;
 
             peli.innerHTML = `
               <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" alt="${pelicula.title}" class="card-img">
@@ -54,7 +54,7 @@ function cargarPeliculas(url) {
               <div class="estrellas" style="text-align:center;">
                 ${getEstrellas(pelicula.vote_average)}
               </div>
-              <a href="#" class="btn ver-pelicula" data-link="${linkAvapelis}">Ver Película</a>
+              <a href="#" class="btn ver-pelicula" data-link="${linkpelis44}">Ver Película</a>
             `;
 
             contenedor.appendChild(peli);
