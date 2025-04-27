@@ -45,7 +45,7 @@ function cargarPeliculas(url) {
             peli.setAttribute("data-categoria", pelicula.genre_ids[0] || "otros");
 
             const tituloLimpio = encodeURIComponent(nombreLimpio);
-            const linkAvapelis = `https://www.avapelis.com/?s=${tituloLimpio}`;
+            const linkAvapelis = `https://www.pelis44.com/?s=${tituloLimpio}`;
 
             peli.innerHTML = `
               <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" alt="${pelicula.title}" class="card-img">
